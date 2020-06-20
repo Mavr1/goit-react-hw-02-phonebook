@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Input from '../input/Input';
 
-class Filter extends Component {
-  state = { input: '' };
-  render() {
-    return <div></div>;
-  }
-}
+const Filter = ({ onChange }) => (
+  <Input label="Find contacts by name" onChange={onChange} name="filter" />
+);
 
 export default Filter;
