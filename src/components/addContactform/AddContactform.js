@@ -28,8 +28,18 @@ class AddContactform extends Component {
   render() {
     return (
       <form>
-        <Input label="Name" name="name" onChange={this.handleInput} />
-        <Input label="Number" name="number" onChange={this.handleInput} />
+        <Input
+          value={this.state.name}
+          label="Name"
+          name="name"
+          onChange={this.handleInput}
+        />
+        <Input
+          value={this.state.number}
+          label="Number"
+          name="number"
+          onChange={this.handleInput}
+        />
         <Button name="Add contact" type="submit" onClick={this.handleSubmit} />
       </form>
     );
